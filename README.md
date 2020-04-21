@@ -12,7 +12,9 @@ WatchNRun can also be used to run a batch file (on the server) from any ASP, PHP
 Simply code your page to drop a file, when WatchNRun finds that file was created it runs your other process.
 
 Tested on Windows XP, Vista, 7, 8, 8.1 and Server 2003, 2008, 2012
+
 A scripted install/uninstall is not included with this software.
+
 This program runs as a service; without any GUI, taskbar, or system tray icon.
 
 <b>Installation:</b>
