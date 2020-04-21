@@ -30,19 +30,21 @@ View the default .xml file that's included. Anytime you make a change in WatchNR
 There are two sections <FileCreatedHandler> and <FileModifiedHandler>, if you are not going to use one simply delete it. To watch several different files simply duplicate the entire section and specify different settings, or use * in the filename.
 
 For the <FileCreatedHandler> section...
-<Path>C:\folder</Path> set this to the directory where the file will be
-<FileNameFilter>filecreated.txt</FileNameFilter> set this to the name of the file (or file*.txt is also acceptable for multiple)
-<Delay>0</Delay> change this to 1 or 2 if the software is too quick in detecting the file and running your process
-<RunProcess>C:\folder\filewascreated.bat</RunProcess> full path to the .bat or .exe you want to run
+    
+    <Path>C:\folder</Path> set this to the directory where the file will be
+    <FileNameFilter>filecreated.txt</FileNameFilter> set this to the name of the file (or file*.txt is also acceptable for multiple)
+    <Delay>0</Delay> change this to 1 or 2 if the software is too quick in detecting the file and running your process
+    <RunProcess>C:\folder\filewascreated.bat</RunProcess> full path to the .bat or .exe you want to run
 
 For the <FileModifiedHandler> section...
-<Path>C:\folder</Path> set this to the directory where the file being modified is located
-<FileNameFilter>filemodified.txt</FileNameFilter> set this to the name of the file (or file*.txt is also acceptable for multiple)
-<SkipEmptyLines>1</SkipEmptyLines> under most circumstances leave this set to 1
-<PatternToMatch>modified now</PatternToMatch> this is the text that must be found in the last line to trigger running your process
-(set this to blank: <PatternToMatch></PatternToMatch> if you want to run your process any time the file changes)
-<Delay>0</Delay> change this to 1 or 2 if the software is too quick in detecting the change and running your process
-<RunProcess>C:\folder\filewasmodified.bat</RunProcess> full path to the .bat or .exe you want to run
+    
+    <Path>C:\folder</Path> set this to the directory where the file being modified is located
+    <FileNameFilter>filemodified.txt</FileNameFilter> set this to the name of the file (or file*.txt is also acceptable for multiple)
+    <SkipEmptyLines>1</SkipEmptyLines> under most circumstances leave this set to 1
+    <PatternToMatch>modified now</PatternToMatch> this is the text that must be found in the last line to trigger running your process
+        (set this to blank: <PatternToMatch></PatternToMatch> if you want to run your process any time the file changes)
+    <Delay>0</Delay> change this to 1 or 2 if the software is too quick in detecting the change and running your process
+    <RunProcess>C:\folder\filewasmodified.bat</RunProcess> full path to the .bat or .exe you want to run
 
 <b>Usage:</b>
 
