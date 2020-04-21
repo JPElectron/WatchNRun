@@ -25,7 +25,7 @@ This program runs as a service; without any GUI, taskbar, or system tray icon.
 4) Modify WatchNRunConfig.xml as indicated below
 5) Right-click on _setup_.bat and select "Run as administrator" to install the service (see note at bottom of this text)
 
-View the default .xml file that's included. Anytime you make a change in WatchNRunConfig.xml you must restart the service for it to take effect.
+Anytime you make a change in WatchNRunConfig.xml you must restart the service for it to take effect.
 
 <b>.xml Settings:</b>
 
