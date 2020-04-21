@@ -21,7 +21,7 @@ This program runs as a service; without any GUI, taskbar, or system tray icon.
 2) Right-click on the .zip file you downloaded, select properties, click the Unblock button (if this button is not present just proceed)
 3) Extract the contents of the .zip file (usually to C:\WatchNRun)
 4) Modify WatchNRunConfig.xml as indicated below
-5) Right-click on _setup_.bat and select "Run as administrator" to install the service
+5) Right-click on _setup_.bat and select "Run as administrator" to install the service (see note at bottom of this text)
 
 View the default .xml file that's included. Anytime you make a change in WatchNRunConfig.xml you must restart the service for it to take effect.
 
@@ -50,6 +50,6 @@ For the <FileModifiedHandler> section...
 
 No GUI is displayed, check Task Manager or Control Panel > Administrative Tools > Services to see that it's running.
 
-* Under Windows Vista and later OS versions you may receive an error (HRESULT: 0x80131515) when installing the service.
+Note: Under Windows Vista and later OS versions you may receive an error (HRESULT: 0x80131515) when installing the service.
 The solution is to save the .zip file, right-click on it, select properties, and click the Unblock button.
 Then extract the contents of the .zip file. Right-click on _setup_.bat and select "Run as administrator" and it will work.
