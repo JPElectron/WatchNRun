@@ -29,17 +29,16 @@ Anytime you make a change in WatchNRunConfig.xml you must restart the service fo
 
 <b>.xml Settings:</b>
 
-There are two sections <FileCreatedHandler> and <FileModifiedHandler>, if you are not going to use one simply delete it. To watch several different files simply duplicate the entire section and specify different settings, or use * in the filename.
+There are two sections 'FileCreatedHandler' and 'FileModifiedHandler', if you are not going to use one simply delete it. To watch several different files simply duplicate the entire section and specify different settings, or use * in the filename.
 
-For the <FileCreatedHandler> section...
-    
+    <FileCreatedHandler>
     <Path>C:\folder</Path> set this to the directory where the file will be
     <FileNameFilter>filecreated.txt</FileNameFilter> set this to the name of the file (or file*.txt is also acceptable for multiple)
     <Delay>0</Delay> change this to 1 or 2 if the software is too quick in detecting the file and running your process
     <RunProcess>C:\folder\filewascreated.bat</RunProcess> full path to the .bat or .exe you want to run
+    </FileCreatedHandler>
 
-For the <FileModifiedHandler> section...
-    
+    <FileModifiedHandler>    
     <Path>C:\folder</Path> set this to the directory where the file being modified is located
     <FileNameFilter>filemodified.txt</FileNameFilter> set this to the name of the file (or file*.txt is also acceptable for multiple)
     <SkipEmptyLines>1</SkipEmptyLines> under most circumstances leave this set to 1
@@ -47,6 +46,7 @@ For the <FileModifiedHandler> section...
         (set this to blank: <PatternToMatch></PatternToMatch> if you want to run your process any time the file changes)
     <Delay>0</Delay> change this to 1 or 2 if the software is too quick in detecting the change and running your process
     <RunProcess>C:\folder\filewasmodified.bat</RunProcess> full path to the .bat or .exe you want to run
+    </FileModifiedHandler>
 
 <b>Usage:</b>
 
