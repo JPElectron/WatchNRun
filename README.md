@@ -1,4 +1,5 @@
 # WatchNRun
+
 Waits for a file to get created, or a file to be modified, then runs whatever .bat or .exe you choose.
 This might be useful to detect when a 3rd party application does something (via temp file creation or log file addition) and you want to...
 
@@ -17,7 +18,7 @@ A scripted install/uninstall is not included with this software.
 
 This program runs as a service; without any GUI, taskbar, or system tray icon.
 
-<b>Installation:</b>
+## Installation
 
 1) Ensure the Microsoft .NET Framework 4.x is installed
 2) Right-click on the .zip file you downloaded, select properties, click the Unblock button (if this button is not present just proceed)
@@ -48,10 +49,20 @@ There are two sections 'FileCreatedHandler' and 'FileModifiedHandler', if you ar
     <RunProcess>C:\folder\filewasmodified.bat</RunProcess> full path to the .bat or .exe you want to run
     </FileModifiedHandler>
 
-<b>Usage:</b>
+## Usage
 
 No GUI is displayed, check Task Manager or Control Panel > Administrative Tools > Services to see that it's running.
 
 Note: Under Windows Vista and later OS versions you may receive an error (HRESULT: 0x80131515) when installing the service.
 The solution is to save the .zip file, right-click on it, select properties, and click the Unblock button.
 Then extract the contents of the .zip file. Right-click on _setup_.bat and select "Run as administrator" and it will work.
+
+## License
+
+GPL does not allow you to link GPL-licensed components with other proprietary software (unless you publish as GPL too).
+
+GPL does not allow you to modify the GPL code and make the changes proprietary, so you cannot use GPL code in your non-GPL projects.
+
+If you wish to integrate this software into your commercial software package, or you are a corporate entity with more than 10 employees, then you should obtain a per-instance license, or a site-wide license, from http://jpelectron.com/buy
+
+[End of Line]
